@@ -1,4 +1,5 @@
 import React from "react"
+import { View } from "react-native-web"
 import { FixedSizeList as List } from "react-window"
 
 const initialList = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k" ]
@@ -20,6 +21,8 @@ function ReactWindowExample() {
 				height={150}
 				itemCount={list.length}
 				itemSize={35}
+				layout={"horizontal"}
+				direction={"rtl"}
 				width={300}>
 					{
 						({ index, style }) => {

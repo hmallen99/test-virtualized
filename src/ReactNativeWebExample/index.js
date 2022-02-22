@@ -41,7 +41,7 @@ function ReactNativeWebExample ({inverted, horizontal}) {
 	}
 
 	return (
-		<View style={containerStyle}>
+		<div style={containerStyle}>
 			<VirtualizedList
 				data={dataList}
 				initialNumToRender={4}
@@ -62,8 +62,9 @@ function ReactNativeWebExample ({inverted, horizontal}) {
 							])
 						})
 				}}
+				style={{height:400}}
 			/>
-		</View>
+		</div>
 	)
 }
 
